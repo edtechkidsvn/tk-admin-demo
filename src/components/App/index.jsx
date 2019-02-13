@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
-import DataTable from '../DataTable';
-import { PowerSettingsNew, Build } from '@material-ui/icons'
+import React from 'react';
+import { PowerSettingsNew, Build, TableChart } from '@material-ui/icons'
 import { TKDrawer, TKAppbar } from 'tk-admin';
+
+import DataTable from '../DataTable';
 
 const panels = [
   {
-    icon: <Build />,
-    title: 'Learning',
-    view: () => (<span>Welcome TKADMIN</span>),
+    icon: <TableChart />,
+    title: 'Table',
+    view: () => (<DataTable />),
     link: '/learn',
   },
   {
